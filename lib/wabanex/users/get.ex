@@ -3,6 +3,9 @@ defmodule Wabanex.Users.Get do
   alias Wabanex.{User, Repo}
 
   def call(id) do
+    id
+    |> UUID.cast()
+    |> handle_response()
   end
 
   defp handle_response(:error) do
