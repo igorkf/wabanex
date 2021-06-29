@@ -1,4 +1,4 @@
-defmodule WabanexWeb.IMCControler do
+defmodule WabanexWeb.IMCController do
   use WabanexWeb, :controller
 
   alias Wabanex.IMC
