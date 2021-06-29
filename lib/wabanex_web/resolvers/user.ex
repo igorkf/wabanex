@@ -1,9 +1,11 @@
 defmodule WabanexWeb.Resolvers.User do
+  alias Wabanex.Users
+
   def get(%{id: user_id}, _context) do
-    Wabanex.Users.Get.call(user_id)
+    Users.Get.call(user_id)
   end
 
   def create(%{input: params}, _context) do
-    Wabanex.Users.Create.call(params)
+    Users.Create.call(params)
   end
 end
