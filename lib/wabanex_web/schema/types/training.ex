@@ -4,7 +4,7 @@ defmodule WabanexWeb.Schema.Types.Training do
   import_types WabanexWeb.Schema.Types.Exercise
 
   @desc "Logic training representation"
-  object :training do
+  object :trainings do
     field :id, non_null(:uuid4)
     field :start_date, non_null(:string)
     field :end_date, non_null(:string)
