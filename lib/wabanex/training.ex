@@ -22,7 +22,6 @@ defmodule Wabanex.Training do
     %__MODULE__{}
     |> cast(params, @fields)
     |> validate_required(@fields)
-    |> unique_constraint([:email])
     |> cast_assoc(:exercises)
   end
 end
